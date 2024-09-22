@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2 {
+    font-weight: 600;
+    color: #333;
+}
+
+p {
+    font-weight: 300;
+    color: #555;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    padding: 50px 0;
+    background-color: #d0e8f2;
+    color: #1b262c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #f7f7f7;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #0077b6;
+}
+
+.about-section, .skills-section, .projects-section, .contact-section {
+    padding: 60px 0;
+}
+
+.about-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.about-text {
+    margin-left: 40px;
+}
+
+.profile-pic {
+    width: 250px;
+    height: auto;
+    border-radius: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    /* transform: scale(1.1); */
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+.skill-card, .project-card {
+    margin: 20px 0;
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.skill-card:hover, .project-card:hover {
+    background-color: #d0e8f2;
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+/* General Dark Mode */
+body.dark-mode {
+    background-color: #222; /* Dark background */
+    color: #f4f4f4; /* Light text */
+}
+
+.dark-mode header, 
+.dark-mode footer {
+    background-color: #333; /* Darker background for header and footer */
+}
+
+.dark-mode nav {
+    background-color: #333; /* Darker background for the navigation */
+}
+
+.dark-mode nav ul li a {
+    color: #aad6ff; /* Keep blue color for nav links */
+}
+
+.dark-mode .about-section, 
+.dark-mode .skills-section, 
+.dark-mode .projects-section, 
+.dark-mode .contact-section {
+    background-color: #2a2a2a; /* Darker background for sections */
+}
+
+.dark-mode .skill-card, 
+.dark-mode .project-card {
+    background-color: #444; /* Dark background for cards */
+    color: #f4f4f4; /* Light text */
+}
+
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode p {
+    color: #f4f4f4; /* Ensure all text is light for dark mode */
+}
+
+.dark-mode a {
+    color: #aad6ff; /* Keep blue color for links in dark mode */
+}
+
+.dark-mode button {
+    background-color:#333; /* Keep blue color for buttons */
+    color: white; /* Light text color for contrast */
+}
+
+.dark-mode .profile-pic {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Lighter shadow in dark mode */
+}
+header button{
+    border: none;
+    font-size: 10px;
+    background-color: #d0e8f2 ;
+}
+
